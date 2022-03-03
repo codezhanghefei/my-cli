@@ -1,0 +1,17 @@
+{
+  "name": "my-cli",
+  "version": "1.0.0",
+  "description": "my first cli",
+  "main": "cli.js",
+  "bin": {
+    "my-cli": "cli.js"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "zhf",
+  "license": "ISC",
+  "devDependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
