@@ -4,7 +4,7 @@
   "description": "my first cli",
   "main": "cli.js",
   "bin": {
-    "my-cli": "cli.js"
+    "my-cli": "bin.js"
   },
   "scripts": {
     "test": "test"
@@ -13,5 +13,9 @@
   "license": "ISC",
   "devDependencies": {
     "inquirer": "^8.2.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.0.0"
   }
 }
