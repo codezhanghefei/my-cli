@@ -2,9 +2,12 @@
   "name": "my-cli",
   "version": "1.0.0",
   "description": "my first cli",
-  "main": "cli.js",
+  "type": "module",
+  "main": "./bins/cli.js",
   "bin": {
-    "my-cli": "bin.js"
+    "my-cli": "./bins/cli.js",
+    "my-bin": "./bins/bin.js",
+    "zt": "./bins/zt.js"
   },
   "scripts": {
     "test": "test"
@@ -12,10 +15,14 @@
   "author": "zhf",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^17.0.21",
     "inquirer": "^8.2.0"
   },
   "dependencies": {
     "chalk": "^4.1.2",
-    "commander": "^9.0.0"
+    "commander": "^9.0.0",
+    "figlet": "^1.5.2",
+    "fs-extra": "^10.0.1",
+    "ora": "^6.1.0"
   }
 }
