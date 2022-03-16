@@ -1,10 +1,10 @@
 #! /usr/bin/env node
 // 告诉操作系统执行这个脚本的时候，调用/usr/bin下的node解释器
 
-console.log('======= my-cli start =======');
+import inquirer from 'inquirer';
+import creatFrontEndModule from '../bin/frontEndModule.js';
 
-const inquirer = require('inquirer');
-const creatFrontEndModule = require('./bin/frontEndModules');
+console.log('======= my-cli start =======');
 
 inquirer.prompt([
   {
@@ -29,7 +29,7 @@ inquirer.prompt([
         default: 'my-cli',
       },
     ]).then(async answers => {
-      await creatFrontEndModule({ projectName: 'test' });
+      await creatFrontEndModule(answers);
     })
   } else {
     console.log('======= 功能开发中，敬请期待 =======');
